@@ -1,38 +1,73 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital@1&family=Montserrat:wght@300;400;800&family=Noto+Sans:wght@100&family=Poppins:wght@300&family=Raleway:ital,wght@1,100;1,200&family=Roboto&family=Sono:wght@300;400;500&family=Urbanist:wght@100;200;300&family=Work+Sans:wght@100;300;400&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App{
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.login{
+ display: flex;
+ justify-content: center;
+ margin-top: 12px;
+ 
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.inputpart{
+    
+ height: 40px;
+ padding: 5px;
+ outline: none;
+ border-radius: 5px;
+ border: 1px solid blue;
+ font-size: 15px;
+ 
 }
-
-.App-link {
-  color: #61dafb;
+.button{
+height: 40px;
+width: 50px;
+margin-left: 2px;
+background-color: #1769aa;
+color: white;
+outline: none;
+border: none;
+border-radius: 5px;
+cursor: pointer;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.grid_main{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    color: whitesmoke;
+    margin-top: 20px;
+    gap: 20px;
+    justify-content: center;
+}
+.grid_child{
+    padding: 20px;
+    background-color: rgb(165, 75, 210);
+    width: 300px;
+    cursor: pointer;
+}
+.grid_main :hover{
+    background-color: #21659c;
+}
+.editDocs_main{
+    font-family: 'Poppins', sans-serif;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.editDocs_inner{
+    width: 800px;
+    box-shadow: 0px -2px 5px 2px rgba(181, 181, 181, 0.75);
+    -webkit-box-shadow: 0px -2px 5px 2px rgba(181, 181, 181, 0.75);
+    -moz-box-shadow: 0px -2px 5px 2px rgba(181, 181, 181, 0.75);
+    padding: 20px;
+    height: 750px;
 }
